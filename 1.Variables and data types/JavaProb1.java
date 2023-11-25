@@ -11,6 +11,6 @@ public class JavaProb1{
         float avg = (A + B + C) / 3;
 
         System.out.println(avg);
-
+        sc.close();
     }
 }

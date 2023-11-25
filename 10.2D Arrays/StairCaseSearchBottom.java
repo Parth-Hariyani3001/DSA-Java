@@ -3,7 +3,7 @@ public class StairCaseSearchBottom {
         int row = matrix.length-1;
         int col = 0;
 
-        while(col < matrix.length && row >= 0){
+        while(col < matrix[0].length && row >= 0){
             if(matrix[row][col] == key) {
                 System.out.println("Found key at (" + row + "," + col + ")");
                 return true;

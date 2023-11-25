@@ -8,5 +8,6 @@ public class JavaProb2{
 
         float square = side * side;
         System.out.println(square);
+        sc.close();
     }
 }

@@ -7,6 +7,6 @@ public class javaBasics{
         float a = 25.12f;
         int b = (int)a;
         System.out.println(b);
+        sc.close();
     }
-
 }

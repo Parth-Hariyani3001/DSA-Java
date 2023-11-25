@@ -3,25 +3,25 @@ public class DiagonalMatrix {
         int sum = 0;
 
         //Brute Force Approach
-        // for(int i = 0; i < num.length; i++){
-        //     for(int j = 0; j < num[i].length; j++){
-        //         if(i == j){
-        //             sum = sum + num[i][j];
-        //         }   else if(i+j == num.length-1){
-        //             sum = sum + num[i][j];
-        //         }
-        //     }
-        // }
-
-        //Optimal Approach
         for(int i = 0; i < num.length; i++){
-            //Primary Diagonal
-            sum += num[i][i];
-            //Secondary Diagonal
-            if(i != num.length - 1 - i){
-                sum += num[i][num.length-i-1];
+            for(int j = 0; j < num[i].length; j++){
+                if(i == j){
+                    sum = sum + num[i][j];
+                }   else if(i+j == num.length-1){
+                    sum = sum + num[i][j];
+                }
             }
         }
+
+        //Optimal Approach
+        // for(int i = 0; i < num.length; i++){
+        //     //Primary Diagonal
+        //     sum += num[i][i];
+        //     //Secondary Diagonal
+        //     if(i != num.length - 1 - i){
+        //         sum += num[i][num.length-i-1];
+        //     }
+        // }
         
         return sum;
     }

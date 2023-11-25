@@ -1,5 +1,3 @@
-import java.util.*;
-
 public class JavaProb3{
     public static void main(String args[]){
         float pencil = 5f;
